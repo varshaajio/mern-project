@@ -15,17 +15,9 @@ paths = [ "/" ]
 localPort = 19819
 
 [services.development]
-run = "pnpm --filter @workspace/w3appdevelopers run dev"
-
-[services.production]
-build = [ "pnpm", "--filter", "@workspace/w3appdevelopers", "run", "build" ]
-publicDir = "artifacts/w3appdevelopers/dist/public"
-serve = "static"
-
-[[services.production.rewrites]]
-from = "/*"
-to = "/index.html"
+run = "cd /home/runner/workspace/artifacts/w3app-next && PORT_NEXT=19819 npx next dev -p 19819 --hostname 0.0.0.0"
 
 [services.env]
 PORT = "19819"
-BASE_PATH = "/"
+PORT_NEXT = "19819"
+NODE_ENV = "development"
