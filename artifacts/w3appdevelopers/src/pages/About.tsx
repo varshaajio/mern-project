@@ -32,7 +32,7 @@ export function About() {
               </p>
             </div>
             <div className="reveal-right">
-              <img src="/images/webnox-team.jpg" alt="Company Team" className="rounded-2xl shadow-xl w-full" />
+              <img src="/images/webnox-team.jpg" alt="W3AppDevelopers Team" className="rounded-2xl shadow-xl w-full" />
             </div>
           </div>
         </div>

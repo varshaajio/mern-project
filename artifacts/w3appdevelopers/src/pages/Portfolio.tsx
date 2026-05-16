@@ -13,7 +13,7 @@ export function Portfolio() {
     { title: "Mobile App Portfolio", category: "Mobile Apps", image: "/images/Mobile-App-Portfolio.png" },
     { title: "SEO Portfolio", category: "Digital Marketing", image: "/images/SEO-portfolio.png" },
     { title: "PPC Portfolio", category: "Digital Marketing", image: "/images/PPC-Portfolio.png" },
-    { title: "Webnox Inventory", category: "Web Design", image: "/images/webnox-inventory.png" },
+    { title: "W3App Inventory System", category: "Web Design", image: "/images/webnox-inventory.png" },
     { title: "Easy Field Service", category: "Mobile Apps", image: "/images/easy-field-service-1.png" },
     { title: "We Foodie", category: "Mobile Apps", image: "/images/we-foodie.png" },
     { title: "We Jobs", category: "Web Design", image: "/images/we-jobs.png" },

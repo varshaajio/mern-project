@@ -42,10 +42,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 z-50">
             <img 
-              src="/images/Webnox-Technologies-Private-Limited.png" 
+              src="/images/w3appdevelopers-logo.jpg" 
               alt="W3AppDevelopers Logo" 
-              className="h-10 object-contain"
+              className="h-12 w-12 object-contain rounded-lg"
             />
+            <span className={`text-lg font-black tracking-tight hidden sm:block ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
+              W3App<span className="text-brand">Developers</span>
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -115,12 +118,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             {/* Column 1 */}
             <div>
-              <Link href="/">
+              <Link href="/" className="flex items-center gap-3 mb-6">
                 <img 
-                  src="/images/Webnox-Technologies-Private-Limited.png" 
+                  src="/images/w3appdevelopers-logo.jpg" 
                   alt="W3AppDevelopers Logo" 
-                  className="h-12 object-contain bg-white p-2 rounded mb-6"
+                  className="h-12 w-12 object-contain rounded-lg"
                 />
+                <span className="text-xl font-black text-white">
+                  W3App<span className="text-brand">Developers</span>
+                </span>
               </Link>
               <p className="text-slate-400 mb-6 leading-relaxed">
                 We are a premium web development, app creation, and digital marketing agency serving businesses of all sizes globally.
