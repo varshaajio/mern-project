@@ -6,6 +6,7 @@ import {
   ListContactSubmissionsResponse,
 } from "@workspace/api-zod";
 import { authenticateAdmin } from "../middleware/auth";
+import { sendAdminNotification, sendUserAutoReply } from "../services/emailService";
 
 const router: IRouter = Router();
 
@@ -28,6 +29,29 @@ router.post("/contact", async (req, res): Promise<void> => {
     .returning();
 
   req.log.info({ contactId: contact.id }, "Contact submission created");
+
+  const payload = {
+    name: contact.name,
+    email: contact.email,
+    phone: contact.phone,
+    subject: contact.subject,
+    message: contact.message,
+    submittedAt: contact.createdAt,
+  };
+
+  Promise.allSettled([
+    sendAdminNotification(payload),
+    sendUserAutoReply(payload),
+  ]).then((results) => {
+    results.forEach((result, i) => {
+      const label = i === 0 ? "admin notification" : "user auto-reply";
+      if (result.status === "rejected") {
+        req.log.error({ err: result.reason }, `Failed to send ${label} email`);
+      } else {
+        req.log.info(`Email sent: ${label}`);
+      }
+    });
+  });
 
   res.status(201).json({
     id: contact.id,

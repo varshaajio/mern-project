@@ -1,0 +1,142 @@
+Implement a secure Nodemailer email notification system in the existing W3AppDevelopers MERN CMS project.
+
+IMPORTANT:
+
+* Use ONLY environment variables from Replit Secrets
+* DO NOT hardcode any credentials
+* DO NOT store sensitive data in configuration files
+* Keep implementation lightweight and production-safe
+
+========================================
+SECURITY RULE (CRITICAL)
+========================
+
+All sensitive data MUST come from:
+
+process.env (Replit Secrets)
+
+DO NOT use:
+
+* config files for secrets
+* hardcoded emails/passwords
+* frontend-exposed keys
+
+========================================
+ENVIRONMENT VARIABLES (SECRETS)
+===============================
+
+Use the following environment variables:
+
+* SMTP_EMAIL
+* SMTP_PASSWORD
+* SMTP_HOST (default: smtp.gmail.com)
+* SMTP_PORT (default: 587)
+* ADMIN_EMAIL
+* SITE_NAME
+* SITE_URL
+
+========================================
+FUNCTIONAL REQUIREMENTS
+=======================
+
+When a user submits the contact form:
+
+1. Save submission to MongoDB
+2. Send email notification to ADMIN_EMAIL
+3. Send auto-reply email to user email
+4. Ensure both emails are sent securely via Nodemailer
+
+========================================
+ADMIN EMAIL CONTENT
+===================
+
+Send email to ADMIN_EMAIL with:
+
+* User name
+* Email
+* Phone (if available)
+* Subject
+* Message
+* Submission timestamp
+
+Subject:
+"New Contact Form Submission - W3AppDevelopers"
+
+========================================
+USER AUTO-REPLY EMAIL
+=====================
+
+Send automatic reply to user:
+
+Subject:
+"Thank you for contacting W3AppDevelopers"
+
+Message must:
+
+* Thank user
+* Confirm receipt
+* Mention support will contact them soon
+* Include SITE_NAME and SITE_URL
+
+========================================
+NODEMAILER SETUP RULES
+======================
+
+* Use Gmail SMTP with App Password
+* Use secure TLS connection
+* Use reusable mail service module
+* Keep code modular (emailService.js)
+
+Example configuration:
+
+* host: process.env.SMTP_HOST
+* port: process.env.SMTP_PORT
+* auth user: process.env.SMTP_EMAIL
+* auth pass: process.env.SMTP_PASSWORD
+
+========================================
+ARCHITECTURE REQUIREMENT
+========================
+
+Create a service layer:
+
+/server/services/emailService.js
+
+Functions:
+
+* sendAdminNotification()
+* sendUserAutoReply()
+
+Controller flow:
+Contact form → Controller → DB save → Email Service
+
+========================================
+ERROR HANDLING
+==============
+
+If email fails:
+
+* Do NOT break contact form submission
+* Log error safely
+* Still store data in MongoDB
+
+========================================
+PERFORMANCE RULES
+=================
+
+* Avoid blocking operations
+* Keep email sending async
+* Do not retry excessively
+* Keep dependencies minimal
+
+========================================
+FINAL EXPECTATION
+=================
+
+After implementation:
+
+* Contact form sends emails to admin successfully
+* User receives auto-reply email
+* All credentials are securely stored in Replit Secrets
+* No sensitive data is exposed in code
+* System remains lightweight and production-ready
