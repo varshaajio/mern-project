@@ -1,0 +1,142 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Segoe UI",
+      "role": "body"
+    },
+    {
+      "family": "Poppins",
+      "role": "heading"
+    },
+    {
+      "family": "Gilroy",
+      "role": "unknown"
+    }
+  ],
+  "colors": {
+    "primary": "#FF6028",
+    "secondary": "#FD3101",
+    "accent": "#FF6600",
+    "background": "#FFFFFF",
+    "textPrimary": "#333333",
+    "link": "#2575FC"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Segoe UI",
+      "heading": "Poppins"
+    },
+    "fontStacks": {
+      "heading": [
+        "Segoe UI",
+        "sans-serif"
+      ],
+      "body": [
+        "Gilroy",
+        "HelveticaNeue-Light",
+        "Helvetica Neue Light",
+        "Helvetica Neue",
+        "Helvetica",
+        "Arial",
+        "Lucida Grande",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Segoe UI",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "44px",
+      "h2": "50px",
+      "body": "18px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "5px"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#FF6600",
+      "textColor": "#FFFFFF",
+      "borderRadius": "30px",
+      "borderRadiusCorners": {
+        "topLeft": "30px",
+        "topRight": "30px",
+        "bottomRight": "30px",
+        "bottomLeft": "30px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#FFFFFF",
+      "textColor": "#FF6600",
+      "borderColor": "#FF6600",
+      "borderRadius": "30px",
+      "borderRadiusCorners": {
+        "topLeft": "30px",
+        "topRight": "30px",
+        "bottomRight": "30px",
+        "bottomLeft": "30px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://w3appdevelopers.com/wp-content/uploads/2026/03/Untitled-Design-1.jpg",
+    "favicon": "https://w3appdevelopers.com/wp-content/uploads/2025/02/cropped-e2fa4230-7375-4818-833b-040c298a7a9b-1-32x32.jpg",
+    "ogImage": "https://w3appdevelopers.com/wp-content/uploads/2026/03/Untitled-Design-1.jpg",
+    "logoAlt": "logo"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 3,
+    "reasoning": "Selected #3 because it is visible, medium-sized, located in the header, and matches the brand name 'w3appdevelopers'.",
+    "confidence": 0.9,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 1,
+      "text": "Get Started",
+      "reasoning": "Button #1 ('Get Started') has a vibrant orange background (#FF6600) and action-oriented text, making it the primary CTA."
+    },
+    "secondary": {
+      "index": 3,
+      "text": "Contact Us",
+      "reasoning": "Button #3 ('Contact Us') has a different background color (#FFFFFF) with an orange border, making it suitable as a secondary CTA."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "businesses seeking web development services"
+  },
+  "designSystem": {
+    "framework": "custom",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 3,
+        "selectedLogoReasoning": "Selected #3 because it is visible, medium-sized, located in the header, and matches the brand name 'w3appdevelopers'.",
+        "confidence": 0.9
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}

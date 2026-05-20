@@ -1,0 +1,327 @@
+Develop a modern production-ready website inspired by [W3AppDevelopers](https://w3appdevelopers.com?utm_source=chatgpt.com) using Next.js, React.js, TypeScript, Tailwind CSS, Node.js, Express.js, MongoDB, and modern frontend technologies.
+
+The MOST IMPORTANT requirement is:
+
+Preserve and accurately reproduce ALL original website content exactly from the provided scraped files and JSON data including:
+
+* Home page content
+* About page content
+* Service descriptions
+* Internship details
+* Blog content
+* SEO metadata
+* Images
+* Navigation structure
+* URLs/slugs
+
+DO NOT:
+
+* Rewrite business content
+* Generate fake placeholder content
+* Replace original sections
+* Create lorem ipsum text
+* Generate random blogs/services
+
+Only modernize:
+
+* UI/UX
+* Responsiveness
+* Animations
+* Layout structure
+* Frontend performance
+
+========================================
+MAIN PRIORITIES
+===============
+
+Focus mainly on:
+
+1. Full frontend coverage of all website pages
+2. Exact content preservation
+3. Responsive modern UI
+4. Versatile admin dashboard
+5. Gmail email notifications using Nodemailer
+6. Join.Chat WhatsApp integration
+7. Blog CMS management
+8. Windows-compatible local deployment
+
+========================================
+TECH STACK
+==========
+
+Frontend:
+
+* Next.js (App Router)
+* React.js
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+* ShadCN UI
+
+Backend:
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT Authentication
+
+Services:
+
+* Nodemailer
+* Firebase (optional)
+* Cloudinary
+* Join.Chat WhatsApp integration
+
+========================================
+FRONTEND REQUIREMENTS
+=====================
+
+Create a premium modern frontend with:
+
+* Glassmorphism effects
+* Smooth transitions
+* Hover animations
+* Responsive layouts
+* Animated sections
+* Floating effects
+* Marquee animations
+* Interactive cards
+* Modern typography
+* Mobile-first design
+* Smooth page transitions
+* Skeleton loaders
+
+Maintain:
+
+* Original orange theme
+* Original content
+* Original page hierarchy
+
+========================================
+WEBSITE PAGES
+=============
+
+Develop ALL frontend pages with original content:
+
+* Home
+* About
+* Services
+* Internships
+* Hosting
+* Domains
+* Contact
+* Blogs
+* Blog details
+* Careers
+* FAQ
+* Team
+* Testimonials
+* Privacy Policy
+* Terms & Conditions
+
+========================================
+STRICT CONTENT RULES
+====================
+
+The system MUST:
+
+* Use scraped HTML files
+* Use provided JSON data
+* Preserve original headings
+* Preserve original paragraphs
+* Preserve blog content
+* Preserve image mappings
+* Preserve SEO metadata
+* Preserve URL structure
+
+If content is missing:
+
+* Show:
+  "CONTENT_PENDING_FROM_SOURCE"
+
+DO NOT hallucinate missing business content.
+
+========================================
+ADMIN DASHBOARD
+===============
+
+Develop a modern versatile admin dashboard with:
+
+* Secure admin login
+* Dashboard overview
+* Blog management
+* Contact submissions
+* User management
+* Notifications
+* Media management
+* SEO settings
+* Website analytics
+* Quick actions
+* Activity logs
+
+Dashboard UI:
+
+* Dark/light mode
+* Sidebar navigation
+* KPI cards
+* Responsive charts
+* Interactive tables
+* Glassmorphism widgets
+* Modern SaaS-style interface
+
+========================================
+BLOG CMS
+========
+
+Develop blog management system:
+
+* Create blog
+* Edit blog
+* Delete blog
+* Draft blogs
+* Rich text editor
+* Categories/tags
+* SEO settings
+* Featured image upload
+* Slug generation
+* Blog preview
+
+Preserve imported original blogs exactly.
+
+========================================
+CONTACT FORM SYSTEM
+===================
+
+Develop MongoDB-backed contact form system.
+
+Features:
+
+* Store submissions in MongoDB
+* Gmail email notifications using Nodemailer
+* Auto-reply email to users
+* Admin email alerts
+* Form validation
+* Spam protection
+* Toast notifications
+
+Fields:
+
+* Name
+* Email
+* Phone
+* Subject
+* Message
+
+========================================
+WHATSAPP INTEGRATION
+====================
+
+Integrate Join.Chat WhatsApp system:
+
+* Floating WhatsApp button
+* Popup support message
+* Direct WhatsApp chat
+* Mobile responsive behavior
+* Smooth animations
+
+========================================
+MEDIA MANAGEMENT
+================
+
+Develop media management with:
+
+* Cloudinary integration
+* Image uploads
+* Media folders
+* Drag-drop upload
+* Image optimization
+* WebP conversion
+
+========================================
+SEO REQUIREMENTS
+================
+
+Implement:
+
+* Dynamic metadata
+* Open Graph tags
+* Twitter cards
+* XML sitemap
+* robots.txt
+* Canonical URLs
+* Structured data
+* SEO-friendly URLs
+* Lazy loading
+* Image optimization
+
+========================================
+PROJECT STRUCTURE
+=================
+
+Use scalable modular structure:
+
+project-root/
+
+* client/
+* server/
+* docs/
+* scripts/
+
+Frontend:
+
+* app/
+* components/
+* layouts/
+* features/
+* hooks/
+* services/
+* utils/
+
+Backend:
+
+* controllers/
+* routes/
+* middleware/
+* models/
+* services/
+* config/
+
+========================================
+WINDOWS LOCAL DEPLOYMENT
+========================
+
+The project must:
+
+* Run locally using VS Code
+* Use npm install/npm run commands
+* Work properly on Windows
+* Avoid Linux-only commands
+* Include README setup guide
+* Include .env examples
+
+========================================
+FINAL EXPECTATION
+=================
+
+The final project must deliver:
+
+* Complete frontend recreation of W3AppDevelopers
+* Accurate original content rendering
+* Modern responsive UI
+* Production-ready admin dashboard
+* Working blog CMS
+* Gmail notifications via Nodemailer
+* WhatsApp Join.Chat integration
+* Clean scalable architecture
+* Windows-compatible local deployment
+
+The application must be:
+
+* Responsive
+* Modern
+* Fast
+* SEO optimized
+* Secure
+* Maintainable
+* Production-ready
