@@ -1,7 +1,19 @@
+import { Monitor } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2 } from "lucide-react";
+
+const features = [
+  "Intuitive Billing & Checkout",
+  "Real-time Inventory Management",
+  "Detailed Sales Analytics & Reporting",
+  "Customer Relationship Management (CRM)",
+  "Multi-store & Multi-user Support",
+  "Offline Mode Capability",
+  "Barcode & QR Code Scanner Support",
+  "GST-compliant Invoice Generation",
+];
 
 export default function Products() {
   return (
@@ -23,40 +35,32 @@ export default function Products() {
           <div className="flex flex-col md:flex-row gap-16 items-center">
             <div className="md:w-1/2">
               <div className="aspect-video bg-slate-100 rounded-3xl relative overflow-hidden border shadow-inner">
-                {/* Visual placeholder for POS */}
                 <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-200">
-                   <div className="text-center text-slate-400">
-                     <Monitor className="w-20 h-20 mx-auto mb-4 opacity-50" />
-                     <span className="font-medium text-lg">POS Dashboard Preview</span>
-                   </div>
+                  <div className="text-center text-slate-400">
+                    <Monitor className="w-20 h-20 mx-auto mb-4 opacity-50" />
+                    <span className="font-medium text-lg">POS Dashboard Preview</span>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="md:w-1/2">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">Key Features</h2>
               <ul className="space-y-4">
-                {[
-                  "Intuitive Billing & Checkout",
-                  "Real-time Inventory Management",
-                  "Detailed Sales Analytics & Reporting",
-                  "Customer Relationship Management (CRM)",
-                  "Multi-store & Multi-user Support",
-                  "Offline Mode Capability"
-                ].map((feature, i) => (
-                  <motion.li 
+                {features.map((feature, i) => (
+                  <motion.li
                     key={i}
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
-                    transition={{ delay: i * 0.1 }}
+                    transition={{ delay: i * 0.07 }}
                     className="flex items-start gap-3"
                   >
-                    <CheckCircle2 className="w-6 h-6 text-primary shrink-0" />
+                    <CheckCircle2 className="w-6 h-6 text-primary shrink-0 mt-0.5" />
                     <span className="text-lg text-slate-700">{feature}</span>
                   </motion.li>
                 ))}
               </ul>
-              
+
               <div className="mt-10">
                 <Link href="/contact">
                   <Button size="lg" className="rounded-full h-14 px-8 text-lg shadow-lg">Request a Demo</Button>
@@ -66,9 +70,18 @@ export default function Products() {
           </div>
         </div>
       </section>
+
+      <section className="py-20 bg-slate-950 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Modernize Your Business?</h2>
+          <p className="text-slate-400 mb-8 max-w-xl mx-auto">
+            Our POS software is built for retailers, restaurants, and businesses of all sizes. Get a personalized demo today.
+          </p>
+          <Link href="/contact">
+            <Button size="lg" className="rounded-full h-14 px-10 text-lg">Get a Free Demo</Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 }
-
-// Temporary icon for placeholder
-import { Monitor } from "lucide-react";

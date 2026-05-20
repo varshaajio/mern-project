@@ -58,16 +58,16 @@ export function Footer() {
             <h3 className="text-white font-semibold text-lg mb-4">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm">
-                <MapPin className="w-5 h-5 text-primary shrink-0" />
-                <span>Erode, Tamil Nadu, India</span>
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span>Mullamparappu, Erode, Tamil Nadu, India</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span>+91-XXXXXXXXXX</span>
+                <a href="tel:+919698548633" className="hover:text-primary transition-colors">+91 96985 48633</a>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>info@w3appdevelopers.com</span>
+                <a href="mailto:info@w3appdevelopers.com" className="hover:text-primary transition-colors">info@w3appdevelopers.com</a>
               </li>
             </ul>
           </div>

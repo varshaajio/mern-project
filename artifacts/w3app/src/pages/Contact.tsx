@@ -81,7 +81,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-slate-900">Our Location</h4>
-                      <p className="text-slate-600">Erode, Tamil Nadu, India</p>
+                      <p className="text-slate-600">Mullamparappu, Erode, Tamil Nadu, India</p>
                     </div>
                   </div>
                   
@@ -91,7 +91,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-bold text-slate-900">Phone Number</h4>
-                      <p className="text-slate-600">+91-XXXXXXXXXX (CONTENT_PENDING_FROM_SOURCE)</p>
+                      <a href="tel:+919698548633" className="text-slate-600 hover:text-primary transition-colors">+91 96985 48633</a>
                     </div>
                   </div>
                   
