@@ -1,0 +1,289 @@
+========================================
+CONTENT SYNC FROM HTML FILES (CRITICAL TASK)
+============================================
+
+Update the content of the following pages EXACTLY using the provided HTML files from the uploaded dataset.
+
+IMPORTANT:
+This is a CONTENT SYNCHRONIZATION TASK, NOT a redesign task.
+
+========================================
+SOURCE OF TRUTH
+===============
+
+Use ONLY the given HTML files as the single source of truth.
+
+DO NOT:
+
+* Rewrite paragraphs
+* Add placeholder text
+
+STRICT RULE:
+The output content must match the original HTML content exactly (word-to-word, structure-wise).
+
+========================================
+PAGES TO UPDATE
+===============
+
+1. ABOUT PAGE
+
+* Replace all existing About page content
+* Use ONLY HTML file content
+* Preserve:
+
+  * headings
+  * paragraphs
+  * sections
+  * images
+  * ordering
+
+in about page, replace empty "Our Workspace" with w3appdevelopers logo image
+
+2. SERVICES PAGE
+
+* Update all service descriptions EXACTLY from HTML
+* Preserve original service titles and descriptions
+* Maintain structure as in HTML
+
+3. PRODUCTS SECTION PAGES
+
+Create separate routes/pages for each of the following given in products section such as:
+
+POS Software
+HRM Software
+CRM Software
+AMC Software
+Multi Recharge Portal
+Blood Donation System
+GYM Management System
+AEPS
+Inventory Management System
+Hospital Management System
+Billing Software (With GST, Without GST)
+
+* Import all product-related frontend content exactly
+* Preserve layout sections from HTML files
+* Do not simplify or rewrite product descriptions
+
+DO NOT:
+
+* Modify content
+* Rewrite descriptions
+* Generate new product details
+* Simplify text
+* Add placeholder content
+
+ONLY:
+
+* Extract
+* Map
+* Render exactly as provided
+
+For each product page:
+
+Use exact HTML content or JSON data provided
+Preserve headings structure (H1, H2, H3)
+Preserve paragraphs exactly
+Preserve images and media paths
+Preserve feature lists
+Preserve pricing or descriptions if present
+
+DO NOT generate missing product descriptions.
+
+If content is missing:
+Show only:
+"CONTENT_PENDING_FROM_SOURCE"
+
+Use dynamic routing (Next.js route params OR React Router)
+Map product slug → HTML/JSON content
+Store product data in MongoDB (preferred)
+Render HTML safely without modification
+Use reusable ProductPage component
+
+Build lightweight mapping system:
+
+Step 1:
+Read product HTML/JSON files
+
+Step 2:
+Extract content sections
+
+Step 3:
+Map to correct product slug
+
+Step 4:
+Render exactly as-is in frontend
+
+Keep original image URLs
+Do not replace images
+Maintain alt text if available
+
+Each product page must include:
+
+Dynamic meta title from original data
+Meta description from source
+Proper URL slug
+Open Graph tags
+Basic schema markup
+
+DO NOT generate SEO text manually.
+
+Lazy load images
+Avoid heavy re-rendering
+Keep component lightweight
+Reuse existing UI components
+
+After implementation:
+
+Each product must have its own dedicated page
+All content must match original W3AppDevelopers data exactly
+No rewritten or AI-generated content allowed
+Pages must be SEO-friendly, responsive, and production-ready
+
+4. BLOG PAGES
+
+Ensure blog system becomes a STRICT CONTENT-ONLY RENDER SYSTEM.
+
+NO GENERATION. NO FALLBACK CONTENT. NO AI FILLING.
+
+Create a blog system that:
+
+Imports HTML files directly
+Preserves exact content
+Displays blogs without modification
+Uses file-based content mapping
+
+Correct key:
+→ filename is PRIMARY KEY
+
+Step 1:
+Read uploaded HTML blog files
+
+Step 2:
+Parse HTML content safely
+
+Step 3:
+Extract:
+
+* title
+* main content
+* images
+* metadata (if present)
+
+Preserve:
+
+* formatting
+* images
+* headings
+* links
+
+Step 4:
+Map to route using filename
+
+Step 5:
+Render EXACT HTML content in frontend
+
+* Preserve:
+
+  * blog titles
+  * blog content
+  * images
+  * dates
+  * categories
+  * metadata
+
+========================================
+CONTENT IMPORT METHOD
+=====================
+
+Implement a lightweight HTML-to-React content mapping system:
+
+Steps:
+
+1. Read provided HTML files
+2. Extract DOM content
+3. Map content into React/Next.js components
+4. Store mapped content in MongoDB only if needed
+5. Render content dynamically without modification
+
+========================================
+RULES FOR CONTENT HANDLING
+==========================
+
+DO NOT:
+
+* Modify HTML text
+* Convert content into summaries
+* Replace structure with dummy components
+* Generate AI-based rewritten content
+
+ONLY:
+
+* Parse HTML
+* Extract content
+* Render exactly as-is
+
+========================================
+IMAGE HANDLING RULES
+====================
+
+* Preserve original image URLs from HTML
+* Do not replace images with placeholders
+* Maintain alt text if present in HTML
+* Use w3appdevelopers logo only if no image is available
+
+========================================
+SEO PRESERVATION
+================
+
+Preserve:
+
+* Meta titles
+* Meta descriptions
+* Header structure (H1, H2, H3)
+* URL slugs if available
+
+DO NOT regenerate SEO content.
+
+========================================
+IMPLEMENTATION STYLE
+====================
+
+Keep implementation:
+
+* Lightweight
+* Incremental
+* Reusable
+* Minimal dependency usage
+
+Avoid:
+
+* Full CMS rebuild
+* Over-engineering
+* New architecture changes
+
+========================================
+PERFORMANCE RULES
+=================
+
+Ensure:
+
+* Fast rendering of HTML content
+* Lazy loading for images
+* No unnecessary re-renders
+* Minimal data transformation
+
+========================================
+FINAL EXPECTATION
+=================
+
+After implementation:
+
+* About page must match original HTML content exactly
+* Services page must match original HTML content exactly
+* Products pages must match original HTML content exactly
+* Blog pages must match original HTML content exactly
+
+This is a strict content synchronization update, not a redesign or rewrite task.
+
+Keep system lightweight (Replit credit preservation safe)

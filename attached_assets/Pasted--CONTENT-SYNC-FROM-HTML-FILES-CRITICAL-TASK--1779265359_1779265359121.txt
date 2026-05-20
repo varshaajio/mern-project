@@ -1,0 +1,155 @@
+========================================
+CONTENT SYNC FROM HTML FILES (CRITICAL TASK)
+============================================
+
+Update the content of the following pages EXACTLY using the provided HTML files from the uploaded dataset.
+
+IMPORTANT:
+This is a CONTENT SYNCHRONIZATION TASK, NOT a redesign task.
+
+========================================
+SOURCE OF TRUTH
+===============
+
+Use ONLY the given HTML files as the single source of truth.
+
+DO NOT:
+
+* Rewrite paragraphs
+* Add placeholder text
+
+STRICT RULE:
+The output content must match the original HTML content exactly (word-to-word, structure-wise).
+
+========================================
+PAGES TO UPDATE
+===============
+
+1. ABOUT PAGE
+
+* Replace all existing About page content
+* Use ONLY HTML file content
+* Preserve:
+
+  * headings
+  * paragraphs
+  * sections
+  * images
+  * ordering
+
+2. SERVICES PAGE
+
+* Update all service descriptions EXACTLY from HTML
+* Preserve original service titles and descriptions
+* Maintain structure as in HTML
+
+3. PRODUCTS SECTION PAGES
+
+* Import all product-related frontend content exactly
+* Preserve layout sections from HTML files
+* Do not simplify or rewrite product descriptions
+
+4. BLOG PAGES
+
+* Import blog listing and blog details exactly
+* Preserve:
+
+  * blog titles
+  * blog content
+  * images
+  * dates
+  * categories
+  * metadata
+
+========================================
+CONTENT IMPORT METHOD
+=====================
+
+Implement a lightweight HTML-to-React content mapping system:
+
+Steps:
+
+1. Read provided HTML files
+2. Extract DOM content
+3. Map content into React/Next.js components
+4. Store mapped content in MongoDB only if needed
+5. Render content dynamically without modification
+
+========================================
+RULES FOR CONTENT HANDLING
+==========================
+
+DO NOT:
+
+* Modify HTML text
+* Convert content into summaries
+* Replace structure with dummy components
+* Generate AI-based rewritten content
+
+ONLY:
+
+* Parse HTML
+* Extract content
+* Render exactly as-is
+
+========================================
+IMAGE HANDLING RULES
+====================
+
+* Preserve original image URLs from HTML
+* Do not replace images with placeholders
+* Maintain alt text if present in HTML
+
+========================================
+SEO PRESERVATION
+================
+
+Preserve:
+
+* Meta titles
+* Meta descriptions
+* Header structure (H1, H2, H3)
+* URL slugs if available
+
+DO NOT regenerate SEO content.
+
+========================================
+IMPLEMENTATION STYLE
+====================
+
+Keep implementation:
+
+* Lightweight
+* Incremental
+* Reusable
+* Minimal dependency usage
+
+Avoid:
+
+* Full CMS rebuild
+* Over-engineering
+* New architecture changes
+
+========================================
+PERFORMANCE RULES
+=================
+
+Ensure:
+
+* Fast rendering of HTML content
+* Lazy loading for images
+* No unnecessary re-renders
+* Minimal data transformation
+
+========================================
+FINAL EXPECTATION
+=================
+
+After implementation:
+
+* About page must match original HTML content exactly
+* Services page must match original HTML content exactly
+* Products pages must match original HTML content exactly
+* Blog pages must match original HTML content exactly
+
+This is a strict content synchronization update, not a redesign or rewrite task.

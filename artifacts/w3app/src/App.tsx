@@ -12,6 +12,7 @@ import Services from "./pages/Services";
 import ServiceDetail from "./pages/ServiceDetail";
 import Internships from "./pages/Internships";
 import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
 import Blogs from "./pages/Blogs";
 import BlogDetail from "./pages/BlogDetail";
 import Careers from "./pages/Careers";
@@ -55,6 +56,7 @@ function AppRoutes() {
         <Route path="/services/:id" component={ServiceDetail} />
         <Route path="/internships" component={Internships} />
         <Route path="/products" component={Products} />
+        <Route path="/products/:slug" component={ProductDetail} />
         <Route path="/blogs" component={Blogs} />
         <Route path="/blogs/:slug" component={BlogDetail} />
         <Route path="/careers" component={Careers} />
