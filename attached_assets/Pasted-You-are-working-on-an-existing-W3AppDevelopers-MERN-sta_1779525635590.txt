@@ -1,0 +1,223 @@
+You are working on an existing W3AppDevelopers MERN stack CMS project.
+
+Your task is to UPDATE the existing system incrementally.
+
+IMPORTANT RULES:
+
+* DO NOT recreate the entire project
+* DO NOT over-engineer backend
+* DO NOT generate AI content or missing descriptions
+* DO NOT use placeholders like "CONTENT_PENDING_FROM_SOURCE"
+* DO NOT generate dummy text
+* ONLY modify or extend existing modules
+
+If any content is missing:
+→ Ask user via console/log OR use existing secret/config values ONLY
+use all of the secret codes and add information to the website.
+
+====================================================
+🎯 MAIN GOAL
+============
+
+Enhance the existing W3AppDevelopers clone website:
+
+* Keep same orange theme
+* Maintain existing UI structure
+* Improve only required modules
+* Ensure Replit credit optimization (lightweight changes only)
+
+====================================================
+📦 CONTENT SOURCE OF TRUTH
+==========================
+
+Use ONLY:
+
+* uploaded HTML files inside folder: w3-frontend-clone
+* connect to MongoDB and store database of Contact-info
+* existing CMS content
+
+DO NOT:
+
+* generate new content
+* rewrite HTML content
+* modify service section (STRICT RULE)
+
+====================================================
+🧠 CONTENT HANDLING RULE (CRITICAL)
+===================================
+
+If content is missing:
+DO NOT show placeholders like:
+"CONTENT_PENDING_FROM_SOURCE"
+
+Instead:
+
+* fetch from HTML files OR
+* use MongoDB stored content OR
+* fallback to existing environment variables (secrets ONLY)
+
+====================================================
+📌 ADMIN DASHBOARD STRUCTURE (UPDATE ONLY)
+==========================================
+
+Keep existing dashboard and ensure structure:
+
+Dashboard
+├── Overview
+├── Contacts
+├── Blogs
+├── Products
+├── Media
+├── Settings
+└── Login/Auth
+
+Add new modules WITHOUT removing existing ones.
+
+New modules must be lightweight only.
+
+====================================================
+📦 PRODUCTS SECTION (NEW PAGES REQUIRED)
+========================================
+
+Create product pages from HTML files (DO NOT redesign existing ones):
+
+Existing:
+
+* POS Software (already exists)
+
+Add new product pages:
+
+* HRM Software
+* CRM Software
+* AMC Software
+* Multi Recharge Portal
+* Blood Donation System
+* GYM Management System
+* AEPS
+* Inventory Management System
+* Hospital Management System
+* Billing Software (GST / Non-GST)
+
+RULES:
+
+* Map directly from HTML files
+* Do NOT rewrite descriptions
+* Do NOT generate new text
+* Preserve original structure exactly
+* Add routes and navbar links only
+
+====================================================
+📊 PRODUCT CATEGORY UI (TEXT VERSION REQUIRED)
+==============================================
+
+Create a TEXT-BASED representation for product categories menu using provided UI images:
+
+* Convert UI into structured sidebar list format
+* Keep hierarchy clean and minimal
+* No redesign needed, only mapping
+
+====================================================
+📝 BLOG SECTION UPDATE
+======================
+
+* Import blogs from HTML files (w3-frontend-clone)
+		Web Programming
+		Application Innovation
+		Digital Advertising
+		Digital Graphics
+* Each blog = one HTML file
+* Preserve exact content
+* No rewriting allowed
+* No AI-generated blog content
+
+====================================================
+💼 CAREERS SECTION
+==================
+
+* Use HTML file content exactly
+* Do not modify structure or text
+* Render as-is in frontend pages
+
+====================================================
+🧭 NAVBAR UPDATE
+================
+
+Add:
+
+* Products section dropdown
+* Blog links
+* Careers link
+* Admin dashboard link (already existing must remain)
+
+DO NOT rebuild navbar system.
+
+====================================================
+💬 WHATSAPP INTEGRATION
+=======================
+
+Use this icon exactly:
+https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg
+
+Requirements:
+
+* Floating WhatsApp button
+* Use Join.Chat popup integration
+* Connect with WHATSAPP_NUMBER from secrets
+* Keep implementation lightweight
+
+====================================================
+🗺️ GOOGLE MAPS (CONTACT PAGE)
+==============================
+
+* Embed Google Maps in Contact page
+* Use location from environment variables or existing config
+* No heavy API system required
+
+====================================================
+🏠 LOGO INTEGRATION
+===================
+
+Use W3AppDevelopers logo in:
+
+* near <title> tag (favicon/header branding)
+* homepage hero section
+* About page "Our Workspace" placeholder image
+
+If image missing:
+→ use stored logo asset only (NO AI generation)
+
+====================================================
+🗄️ DATABASE INTEGRATION
+========================
+
+Use existing MongoDB connection:
+
+* DO NOT change architecture
+* DO NOT introduce new ORM
+* Use existing URI from environment variables (secrets only)
+
+====================================================
+⚡ PERFORMANCE RULES (CRITICAL FOR REPLIT)
+=========================================
+
+* Lightweight updates only
+* No full project rebuild
+* No heavy backend logic changes
+* No unnecessary dependencies
+* Modify only required files
+* Avoid loops or repeated processing
+
+====================================================
+🚀 FINAL EXPECTATION
+====================
+
+After update:
+
+* Existing system remains stable
+* New product pages are added correctly
+* Blogs load from HTML files
+* Careers page uses HTML content
+* Dashboard structure remains intact
+* WhatsApp + Maps integrated
+* No content is AI-generated or missing-replaced
+* System remains Replit credit optimized

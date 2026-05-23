@@ -32,7 +32,6 @@ export function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
-    { name: "Products", href: "/products" },
     { name: "Blogs", href: "/blogs" },
     { name: "Careers", href: "/careers" },
     { name: "Contact Us", href: "/contact" },
@@ -45,6 +44,20 @@ export function Navbar() {
     { name: "Graphic Design", href: "/services/graphic-design" },
     { name: "Corporate Training", href: "/services/corporate-training" },
     { name: "POS Software", href: "/services/pos-software" },
+  ];
+
+  const productLinks = [
+    { name: "POS Software", href: "/products/pos-software" },
+    { name: "HRM Software", href: "/products/hrm-software" },
+    { name: "CRM Software", href: "/products/crm-software" },
+    { name: "AMC Software", href: "/products/amc-software" },
+    { name: "Multi Recharge Portal", href: "/products/multi-recharge-portal" },
+    { name: "Blood Donation System", href: "/products/blood-donation-system" },
+    { name: "GYM Management System", href: "/products/gym-management-system" },
+    { name: "AEPS", href: "/products/aeps" },
+    { name: "Inventory Management", href: "/products/inventory-management-system" },
+    { name: "Hospital Management", href: "/products/hospital-management-system" },
+    { name: "Billing Software", href: "/products/billing-software" },
   ];
 
   return (
@@ -72,6 +85,20 @@ export function Navbar() {
               {services.map((service) => (
                 <Link key={service.href} href={service.href}>
                   <DropdownMenuItem className="cursor-pointer">{service.name}</DropdownMenuItem>
+                </Link>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger className={`flex items-center gap-1 text-sm font-medium transition-colors hover:text-primary outline-none ${location.startsWith("/products") ? "text-primary" : "text-foreground"}`}>
+              Products <ChevronDown className="w-4 h-4" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="start" className="w-52 max-h-80 overflow-y-auto">
+              <Link href="/products"><DropdownMenuItem className="cursor-pointer font-bold">All Products</DropdownMenuItem></Link>
+              {productLinks.map((p) => (
+                <Link key={p.href} href={p.href}>
+                  <DropdownMenuItem className="cursor-pointer">{p.name}</DropdownMenuItem>
                 </Link>
               ))}
             </DropdownMenuContent>
@@ -128,13 +155,24 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <div className="py-2">
+          <div className="py-2 border-b border-slate-100">
             <span className="text-sm font-bold text-foreground mb-2 block">Services</span>
             <div className="flex flex-col gap-2 pl-4">
               <Link href="/services" className="text-sm text-muted-foreground" onClick={() => setIsOpen(false)}>All Services</Link>
               {services.map((service) => (
                 <Link key={service.href} href={service.href} className="text-sm text-muted-foreground" onClick={() => setIsOpen(false)}>
                   {service.name}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="py-2 border-b border-slate-100">
+            <span className="text-sm font-bold text-foreground mb-2 block">Products</span>
+            <div className="flex flex-col gap-2 pl-4">
+              <Link href="/products" className="text-sm text-muted-foreground" onClick={() => setIsOpen(false)}>All Products</Link>
+              {productLinks.map((p) => (
+                <Link key={p.href} href={p.href} className="text-sm text-muted-foreground" onClick={() => setIsOpen(false)}>
+                  {p.name}
                 </Link>
               ))}
             </div>

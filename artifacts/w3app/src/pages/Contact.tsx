@@ -68,6 +68,20 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* Google Maps */}
+      <section className="h-72 w-full bg-slate-100">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.319985576657!2d77.72782827504882!3d11.338961588888673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96ef1c9166a01%3A0x40ef5f76ad2ba30f!2sErode%2C%20Tamil%20Nadu%20638001!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="W3AppDevelopers Location - Mullamparappu, Erode"
+        />
+      </section>
+
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-16">

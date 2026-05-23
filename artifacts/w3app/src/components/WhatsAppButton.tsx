@@ -1,6 +1,8 @@
-import { MessageCircle, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { X } from "lucide-react";
+
+const WHATSAPP_NUMBER = "919698548633";
 
 export function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
@@ -45,16 +47,20 @@ export function WhatsAppButton() {
       </AnimatePresence>
 
       <motion.a
-        href="https://wa.me/919698548633"
+        href={`https://wa.me/${WHATSAPP_NUMBER}`}
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-lg"
+        className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg overflow-hidden bg-[#25D366]"
         onMouseEnter={() => !dismissed && setShowTooltip(true)}
         title="Chat on WhatsApp"
       >
-        <MessageCircle className="w-7 h-7" />
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="WhatsApp"
+          className="w-10 h-10"
+        />
       </motion.a>
     </div>
   );

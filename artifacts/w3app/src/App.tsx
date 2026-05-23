@@ -24,6 +24,8 @@ import AdminLogin from "./pages/admin/Login";
 import AdminDashboard from "./pages/admin/Dashboard";
 import AdminBlogs from "./pages/admin/Blogs";
 import AdminContacts from "./pages/admin/Contacts";
+import AdminProducts from "./pages/admin/Products";
+import AdminSettings from "./pages/admin/Settings";
 
 import NotFound from "@/pages/not-found";
 
@@ -41,6 +43,8 @@ function AppRoutes() {
           <Route path="/admin" component={AdminDashboard} />
           <Route path="/admin/blogs" component={AdminBlogs} />
           <Route path="/admin/contacts" component={AdminContacts} />
+          <Route path="/admin/products" component={AdminProducts} />
+          <Route path="/admin/settings" component={AdminSettings} />
           <Route component={NotFound} />
         </Switch>
       </AdminLayout>
