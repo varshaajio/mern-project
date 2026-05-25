@@ -4,7 +4,8 @@ const SMTP_HOST = process.env.SMTP_HOST ?? "smtp.gmail.com";
 const SMTP_PORT = parseInt(process.env.SMTP_PORT ?? "587", 10);
 const SMTP_EMAIL = process.env.SMTP_EMAIL;
 const SMTP_PASSWORD = process.env.SMTP_PASSWORD;
-const ADMIN_EMAIL = process.env.ADMIN_EMAIL;
+const ADMIN_EMAIL = process.env.ADMIN_EMAIL ?? "trainingtrains2023@gmail.com";
+const CONTACT_NOTIFY_EMAIL = process.env.CONTACT_NOTIFY_EMAIL ?? "trainingtrains2023@gmail.com";
 const SITE_NAME = process.env.SITE_NAME ?? "W3AppDevelopers";
 const SITE_URL = process.env.SITE_URL ?? "https://w3appdevelopers.com";
 
@@ -33,14 +34,10 @@ export type ContactPayload = {
 };
 
 export async function sendAdminNotification(contact: ContactPayload): Promise<void> {
-  if (!ADMIN_EMAIL) {
-    console.warn("[emailService] ADMIN_EMAIL not set — skipping admin notification.");
-    return;
-  }
   const transporter = createTransporter();
   await transporter.sendMail({
     from: `"${SITE_NAME}" <${SMTP_EMAIL}>`,
-    to: ADMIN_EMAIL,
+    to: CONTACT_NOTIFY_EMAIL,
     subject: `New Contact Form Submission - ${SITE_NAME}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 24px; border: 1px solid #e5e7eb; border-radius: 8px;">

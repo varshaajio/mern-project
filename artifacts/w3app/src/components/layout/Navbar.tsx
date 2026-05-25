@@ -58,6 +58,13 @@ export function Navbar() {
     { name: "Inventory Management", href: "/products/inventory-management-system" },
     { name: "Hospital Management", href: "/products/hospital-management-system" },
     { name: "Billing Software", href: "/products/billing-software" },
+    { name: "POS Software Applications", href: "/products/pos-software-applications" },
+    { name: "E-Commerce Websites", href: "/products/ecommerce-websites" },
+    { name: "Hotel Booking Applications", href: "/products/hotel-booking-applications" },
+    { name: "Matrimonial Applications", href: "/products/matrimonial-applications" },
+    { name: "Doctor Appointment App", href: "/products/doctor-appointment-app" },
+    { name: "Learning Management Software", href: "/products/learning-management-software" },
+    { name: "Grocery Application", href: "/products/grocery-application" },
   ];
 
   return (

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
-import { Monitor, Smartphone, Megaphone, PenTool, GraduationCap, Code } from "lucide-react";
+import { Monitor, Smartphone, Megaphone, PenTool, GraduationCap, Code, Download } from "lucide-react";
 
 export default function Home() {
   const services = [
@@ -90,6 +90,12 @@ export default function Home() {
                   Contact Us
                 </Button>
               </Link>
+              <a href="/brochure.pdf" download="W3AppDevelopers-Brochure.pdf">
+                <Button size="lg" variant="ghost" className="rounded-full h-14 px-8 text-lg w-full sm:w-auto gap-2 text-primary hover:bg-primary/10">
+                  <Download className="w-5 h-5" />
+                  Download Brochure
+                </Button>
+              </a>
             </motion.div>
           </div>
         </div>

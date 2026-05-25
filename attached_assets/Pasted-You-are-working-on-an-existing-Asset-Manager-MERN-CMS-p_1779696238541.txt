@@ -1,0 +1,177 @@
+You are working on an existing Asset-Manager MERN CMS project.
+
+IMPORTANT RULES:
+
+* DO NOT rebuild the project
+* DO NOT regenerate existing modules
+* DO NOT create new architecture
+* DO NOT generate AI content
+* DO NOT show placeholders like "CONTENT_PENDING_FROM_SOURCE"
+* ONLY update required modules
+* Keep all changes lightweight (Replit credit optimized)
+
+====================================================
+🎯 MAIN OBJECTIVE
+=================
+
+Enhance existing system by:
+
+* integrating Nodemailer (email system)
+* integrating Firebase Storage with MongoDB mapping
+* replacing missing product pages and adding new product pages if missing
+* updating careers section
+* adding brochure download system in "Home" page
+
+
+WITHOUT heavy backend redesign.
+
+====================================================
+📦 CONTENT SOURCE OF TRUTH
+==========================
+
+Use ONLY:
+
+* HTML files inside: w3_services_products_blogs_package
+* existing MongoDB content
+* uploaded brochure PDF file
+* existing CMS structure
+* use available secret keys
+
+DO NOT:
+
+* rewrite content
+* modify HTML text
+* generate new descriptions
+* replace service section (STRICT RULE)
+
+====================================================
+📧 NODEMAILER EMAIL SYSTEM UPDATE
+=================================
+
+Change all system emails to:
+
+[trainingtrains2023@gmail.com](mailto:trainingtrains2023@gmail.com)
+
+Implement:
+
+* contact form email to admin
+* auto-reply email to user
+* Gmail SMTP via Nodemailer
+* use environment variables only
+
+DO NOT hardcode credentials.
+
+====================================================
+🔥 FIREBASE + MONGODB STORAGE
+=============================
+
+Add Firebase Storage ONLY for:
+
+* images
+* media uploads
+* brochure storage
+
+MongoDB remains primary database.
+
+Store Firebase URLs inside MongoDB.
+PUSH NOTIFICATIONS
+
+You can use Firebase Cloud Messaging (FCM):
+
+New contact form alert
+Admin notifications
+Blog update alerts
+Example:
+User submits contact form
+Admin gets push notification on phone/browser
+
+Keep implementation lightweight:
+
+* no complex sync system
+* no background jobs
+
+====================================================
+📄 PRODUCT PAGES UPDATE (IMPORTANT)
+===================================
+
+Replace ALL missing product pages currently showing:
+"CONTENT_PENDING_FROM_SOURCE"
+
+Use ONLY HTML files from w3_services_products_blogs_package
+
+Add/Ensure additional product pages:
+
+* POS Software Applications
+* E-Commerce Websites
+* Hotel Booking Applications
+* Matrimonial Applications
+* Doctor Appointment App
+* Learning Management Software
+* Grocery Application
+
+AND existing categories:
+
+* HRM Software
+* CRM Software
+* AMC Software
+* Multi Recharge Portal
+* Blood Donation System
+* Gym Management System
+* AEPS
+* Inventory Management System
+* Hospital Management System
+* Billing Software (GST / Non-GST)
+
+RULES:
+
+* Map each product → HTML file
+* DO NOT rewrite descriptions
+* DO NOT generate missing content
+* Preserve exact structure from HTML
+
+====================================================
+💼 CAREERS PAGE UPDATE
+======================
+
+* Replace careers content using HTML file provided
+* DO NOT modify structure
+* Render EXACT content only
+
+====================================================
+📎 BROCHURE INTEGRATION (PDF)
+=============================
+
+* Add uploaded brochure PDF to website
+* Create /brochure page or download button
+* Serve PDF directly from public assets
+* No external processing required
+
+
+====================================================
+ask prompt if any needed from me.
+====================================================
+display admin@w3appdevevelopers.com in Email section for entire website
+====================================================
+⚡ PERFORMANCE RULES (REPLIT OPTIMIZATION)
+=========================================
+
+* No full project rebuild
+* No heavy backend redesign
+* No unnecessary dependencies
+* Modify only required modules
+* Keep APIs minimal
+* Avoid loops or repeated processing
+* Page-by-page updates only
+
+====================================================
+🚀 FINAL EXPECTATION
+====================
+
+After update:
+
+* Product pages fully mapped from HTML files
+* Careers page properly rendered
+* Email system Nodemailer uses [trainingtrains2023@gmail.com](mailto:trainingtrains2023@gmail.com)
+* Firebase storage integrated with MongoDB
+* Brochure downloadable
+* System remains lightweight and stable on Replit

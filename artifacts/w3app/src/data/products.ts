@@ -84,7 +84,58 @@ export const products: Product[] = [
     icon: "🧾",
     category: "Business Software",
   },
+  {
+    slug: "pos-software-applications",
+    title: "POS Software Applications",
+    shortDesc: "Mobile and tablet POS application for on-the-go billing, sales tracking and payment collection.",
+    icon: "📲",
+    category: "Business Software",
+  },
+  {
+    slug: "ecommerce-websites",
+    title: "E-Commerce Websites",
+    shortDesc: "Feature-rich online store with product management, cart, payment gateway and order tracking.",
+    icon: "🛒",
+    category: "Web Application",
+  },
+  {
+    slug: "hotel-booking-applications",
+    title: "Hotel Booking Applications",
+    shortDesc: "End-to-end hotel booking system with room management, reservations, check-in/out and billing.",
+    icon: "🏨",
+    category: "Web Application",
+  },
+  {
+    slug: "matrimonial-applications",
+    title: "Matrimonial Applications",
+    shortDesc: "Matrimonial platform with profile management, smart matching, messaging and subscription system.",
+    icon: "💍",
+    category: "Web Application",
+  },
+  {
+    slug: "doctor-appointment-app",
+    title: "Doctor Appointment App",
+    shortDesc: "Online doctor appointment booking system with patient management, prescriptions and reminders.",
+    icon: "👨‍⚕️",
+    category: "Healthcare",
+  },
+  {
+    slug: "learning-management-software",
+    title: "Learning Management Software",
+    shortDesc: "LMS platform for online courses, student tracking, quizzes, certificates and live classes.",
+    icon: "🎓",
+    category: "Education",
+  },
+  {
+    slug: "grocery-application",
+    title: "Grocery Application",
+    shortDesc: "On-demand grocery delivery app with product catalog, cart, delivery tracking and payment integration.",
+    icon: "🛍️",
+    category: "Web Application",
+  },
 ];
 
 export const getProduct = (slug: string) =>
   products.find((p) => p.slug === slug) ?? null;
+
+export const productCategories = [...new Set(products.map((p) => p.category))];
