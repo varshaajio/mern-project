@@ -20,6 +20,10 @@ path = "scripts/post-merge.sh"
 timeoutMs = 20000
 
 [[ports]]
+localPort = 3000
+externalPort = 3001
+
+[[ports]]
 localPort = 5000
 externalPort = 5000
 
@@ -32,6 +36,10 @@ localPort = 8081
 externalPort = 80
 
 [[ports]]
+localPort = 8082
+externalPort = 3002
+
+[[ports]]
 localPort = 20282
 externalPort = 3000
 
@@ -41,11 +49,5 @@ channel = "stable-25_05"
 [userenv]
 
 [userenv.shared]
-MONGODB_URI = "mongodb+srv://w3admin:w3-app-developers-2026@w3appdevelopers-cms.gvevmbh.mongodb.net/w3appdevelopers_cms?retryWrites=true&w=majority&appName=w3appdevelopers-cms"
-JWT_SECRET = "w3appdevelopers_secret_2026"
-SMTP_EMAIL = "trainingtrains2023@gmail.com"
-SMTP_HOST = "smtp.gmail.com"
-SMTP_PORT = "587"
-PORT = "5000"
 NODE_ENV = "development"
-ADMIN_EMAIL = "trainingtrains2023@gmail.com"
+run = "pnpm install && pnpm run dev"
