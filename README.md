@@ -60,3 +60,9 @@ w3appdevelopers-cms-mern-project/
 │   │   └── index.js     # Frontend entry point
 │   └── package.json
 └── README.md
+```
+
+## Commands
+```bash
+pnpm install
+pnpm run dev
